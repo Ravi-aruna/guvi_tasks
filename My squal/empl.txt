@@ -1,0 +1,32 @@
+CREATE TABLE `empl` ( `id` INT NOT NULL AUTO_INCREMENT , 
+	`empno` INT NOT NULL , 
+	`ename` VARCHAR(200) NOT NULL , 
+	`job` VARCHAR(200) NOT NULL , 
+	`mgr` INT NOT NULL , 
+	`hiredate` DATE NOT NULL , 
+	`sal` INT NOT NULL , 
+	`comm` INT, 
+	`deptno` INT NOT NULL ,
+	PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+
+INSERT INTO `empl` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `sal`, `comm`, `deptno`)VALUES(8369, 'SMITH', 'CLREK', 8902, 1990-12-18, 800, NULL, 20);
+INSERT INTO `empl` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `sal`, `comm`, `deptno`)VALUES(8369, 'SMITH', 'CLREK', 8902, 1990-12-18, 800, NULL, 20);
+INSERT INTO `empl` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `sal`, `comm`, `deptno`)VALUES(8369, 'SMITH', 'CLREK', 8902, 1990-12-18, 800, NULL, 20);
+INSERT INTO `empl` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `sal`, `comm`, `deptno`)VALUES(8369, 'SMITH', 'CLREK', 8902, 1990-12-18, 800, NULL, 20);
+INSERT INTO `empl` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `sal`, `comm`, `deptno`)VALUES(8369, 'SMITH', 'CLREK', 8902, 1990-12-18, 800, NULL, 20);
+INSERT INTO `empl` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `sal`, `comm`, `deptno`)VALUES(8369, 'SMITH', 'CLREK', 8902, 1990-12-18, 800, NULL, 20);
+INSERT INTO `empl` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `sal`, `comm`, `deptno`)VALUES(8369, 'SMITH', 'CLREK', 8902, 1990-12-18, 800, NULL, 20);
+INSERT INTO `empl` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `sal`, `comm`, `deptno`)VALUES(8369, 'SMITH', 'CLREK', 8902, 1990-12-18, 800, NULL, 20);
+INSERT INTO `empl` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `sal`, `comm`, `deptno`)VALUES(8369, 'SMITH', 'CLREK', 8902, 1990-12-18, 800, NULL, 20);
+INSERT INTO `empl` (`empno`, `ename`, `job`, `mgr`, `hiredate`, `sal`, `comm`, `deptno`)VALUES(8369, 'SMITH', 'CLREK', 8902, 1990-12-18, 800, NULL, 20);
+
+
+SELECT ename,sal FROM empl WHERE sal >= 2200;
+SELECT * FROM empl WHERE comm IS NULL;
+SELECT ename,sal FROM empl WHERE sal BETWEEN 2500 AND 4000;
+SELECT ename,job,sal FROM empl WHERE mgr IS NOT NULL;
+SELECT ename from empl WHERE SUBSTRING(name, 3 , 1) = 'A';
+SELECT ename FROM empl WHERE name LIKE '%T';
+
+
